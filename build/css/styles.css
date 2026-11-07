@@ -801,7 +801,7 @@ legend {
 .hero-art { z-index: -2; }
 .hero-art img {
   object-fit: cover;
-  object-position: center 64%;
+  object-position: center 78%;
 }
 .hero-wash {
   z-index: -1;
@@ -890,10 +890,10 @@ legend {
 .request-photo.studio-view::after { display: none; }
 .request-photo.studio-view figcaption { color: #151515; }
 @media (max-width: 700px) {
-  .hero-type { top: 20%; inset-inline: 16px; }
+  .hero-type { top: clamp(82px, 14svh, 154px); inset-inline: 16px; }
   .hero h1 { font-size: clamp(39px, 9.8vw, 65px); letter-spacing: -.052em; }
   .hero-type p { max-width: 290px; margin: 11px auto 0; font-size: 15px; }
-  .hero-art img { object-position: center 59%; }
+
   .dock { gap: 0; font-size: 13px; max-width: calc(100% - 12px); padding: 3px; }
   .dock a { padding-inline: 9px; min-height: 39px; }
   .dock .dock-home { width: 32px; }
@@ -918,4 +918,17 @@ legend {
   .hero h1 { font-size: clamp(42px, 6.5vw, 76px); }
   .hero-type { top: 19%; }
   .hero-type p { margin-top: 6px; }
+}
+
+
+/* The portrait plate has clear sky above its headrest at every supported crop. */
+@media (max-aspect-ratio: 7/10) {
+  .hero-art img { object-position: center 84%; }
+  .hero-type { top: clamp(82px, 14svh, 154px); }
+}
+@media (min-aspect-ratio: 2/1) {
+  .hero-art img { object-position: center 78%; }
+  .hero-type { top: 16%; }
+  .hero h1 { font-size: clamp(34px, min(8.4vw, 13svh), 144px); }
+  .hero-type p { margin-top: clamp(5px, .9svh, 12px); }
 }

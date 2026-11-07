@@ -8,15 +8,15 @@ const versions = {
   },
   Pro: {
     feature: "Регулируемая опора для рук",
-    description: "Подушки поддерживают заднюю поверхность плеча, локоть и предплечье до рукоятки. Высоту и ширину можно подстроить с каждой стороны.",
-    note: "Проём между подушками 460–680 мм",
-    image: "pro-studio.webp"
+    description: "В узком положении подушки почти вплотную подходят к спинке. Каждую опору можно поднять или отодвинуть вбок вместе с рукояткой.",
+    note: "Проём между подушками 437–680 мм",
+    image: "pro-studio-d.webp"
   },
   X: {
     feature: "Два положения подлокотников",
-    description: "В рабочей посадке ладони лежат на джойстиках. Для отдыха подлокотники можно опустить вдоль спинки и распрямить руки. Каждая сторона регулируется отдельно.",
-    note: "Рабочая посадка · предплечья у джойстиков",
-    image: "x-work.webp"
+    description: "Локти можно держать близко к телу, а при необходимости раздвинуть опоры вместе с джойстиками. Для отдыха каждый подлокотник отдельно опускается вдоль спинки.",
+    note: "Управление · проём 437–655 мм",
+    image: "x-work-d.webp"
   }
 };
 
@@ -28,9 +28,9 @@ const poseControl = document.querySelector(".pose-switch");
 
 function showPose(pose) {
   const resting = pose === "rest";
-  modelImage.src = images + (resting ? "x-rest.webp" : versions.X.image);
+  modelImage.src = images + (resting ? "x-rest-d.webp" : versions.X.image);
   modelImage.alt = resting ? "Startrack X с опущенными вдоль спинки подлокотниками." : "Startrack X с двумя подлокотниками в рабочем положении и джойстиками у ладоней.";
-  modelNote.textContent = resting ? "Отдых · руки вдоль спинки" : versions.X.note;
+  modelNote.textContent = resting ? "Отдых · проём 437–655 мм" : versions.X.note;
   for (const button of poseButtons) {
     button.setAttribute("aria-pressed", String(button.dataset.pose === pose));
   }
@@ -102,7 +102,7 @@ if (form) {
   function updateRequestPhoto() {
     const model = form.elements.model.value;
     const pictured = Object.hasOwn(versions, model) ? model : "X";
-    const asset = {Lite: "lite-studio.webp", Pro: "pro-night-portrait.webp", X: "x-studio-photo.webp"}[pictured];
+    const asset = {Lite: "lite-studio.webp", Pro: "pro-front-portrait-d.webp", X: "x-studio-photo-d.webp"}[pictured];
     photoImage.src = images + asset;
     photoImage.alt = "Визуализация прототипа Startrack " + pictured + ".";
     photo.classList.toggle("studio-view", pictured === "Lite");
