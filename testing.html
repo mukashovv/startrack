@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f6f6">
+  <title>Запросить тестирование — Startrack™</title>
+  <meta name="description" content="Запрос на тестирование стойки Startrack. Выберите версию и напишите команде проекта.">
+  <link rel="icon" href="assets/startrack/signet.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/voltrive/fonts.css">
+  <link rel="stylesheet" href="build/css/styles.css?v=c1">
+  <script defer src="build/js/scripts.js?v=c1"></script>
+</head>
+<body class="request-page">
+  <a class="skip" href="#request-title">К заявке</a>
+  <header class="request-head"><div class="wrap"><a class="brand" href="index.html" aria-label="Startrack — на главную"><img src="assets/startrack/wordmark.svg" alt="Startrack™"></a><a class="return-link" href="index.html">← К стойке</a></div></header>
+  <nav class="dock" aria-label="Основное меню">
+    <a class="dock-home" href="index.html#top" aria-label="Startrack — в начало"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M12 1.5 14.2 9.8 22.5 12l-8.3 2.2L12 22.5l-2.2-8.3L1.5 12l8.3-2.2Z"/></svg></a>
+    <a href="index.html#design">Устройство</a>
+    <a href="index.html#versions">Версии</a>
+    <a href="index.html#faq">Вопросы</a>
+    <a class="dock-test" href="#request-title" aria-current="page"><span class="wide-label">Тестирование</span><span class="short-label">Тест</span><span class="arrow ne" aria-hidden="true"></span></a>
+  </nav>
+  <main class="request-layout wrap">
+    <div class="request-copy">
+      <h1 id="request-title">Запросить<br>тестирование.</h1>
+      <p class="intro-copy">Выберите версию и укажите город. Мы обсудим с вами место и время, когда прототип будет готов к тесту.</p>
+      <form id="request-form" action="mailto:support@mukashov.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label>Ваше имя<input type="text" name="name" autocomplete="given-name" maxlength="70" required pattern=".*\S.*" placeholder="Имя"></label>
+          <label>Город<input type="text" name="city" autocomplete="address-level2" maxlength="100" required pattern=".*\S.*" placeholder="Бишкек"></label>
+        </div>
+        <fieldset><legend>Версия стойки</legend>
+          <div class="model-options">
+            <label><input type="radio" name="model" value="Любая" checked><span>Любая</span></label>
+            <label><input type="radio" name="model" value="Lite"><span>Lite</span></label>
+            <label><input type="radio" name="model" value="Pro"><span>Pro</span></label>
+            <label><input type="radio" name="model" value="X"><span>X</span></label>
+          </div>
+        </fieldset>
+        <button class="pill submit-cta" type="submit">Подготовить письмо <span class="arrow ne" aria-hidden="true"></span></button>
+        <p class="form-hint">Откроется черновик письма на <a href="mailto:support@mukashov.com">support@mukashov.com</a>. Отправьте его из своей почты.</p>
+        <div id="draft-panel" class="draft-panel" hidden>
+          <p role="status" id="draft-status"></p>
+          <div class="draft-actions"><button type="button" id="copy-draft">Скопировать запрос</button><a href="mailto:support@mukashov.com" id="reopen-draft">Открыть письмо ещё раз ↗</a></div>
+          <textarea id="draft-text" aria-label="Текст запроса для копирования" readonly hidden></textarea>
+        </div>
+      </form>
+    </div>
+    <figure class="request-photo"><img src="assets/startrack/x-studio-photo.webp" width="1122" height="1402" alt="Студийная визуализация Startrack X с двумя подлокотниками и джойстиками."><figcaption><strong id="request-photo-model">Startrack X</strong><span>Визуализация прототипа</span></figcaption></figure>
+  </main>
+</body>
+</html>

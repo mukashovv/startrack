@@ -1,85 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Startrack — комплектации Lite, Pro и X для трекинговых приспособлений.">
-    <title>Startrack — комплектации</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101010">
+  <meta name="description" content="Startrack — стойка для наблюдения за ночным небом. Изучите конструкцию прототипа и запросите тестирование.">
+  <title>Startrack™ — стойка для наблюдения за звёздами</title>
+  <link rel="icon" href="assets/startrack/signet.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/voltrive/fonts.css">
+  <link rel="stylesheet" href="build/css/styles.css?v=c1">
+  <script defer src="build/js/scripts.js?v=c1"></script>
 </head>
-<body>
-    <div class="page">
-        <header class="site-header">
-            <div class="container">
-                <div class="brand">
-                    <div class="brand__mark">S</div>
-                    <div class="brand__text">
-                        <span class="brand__name">Startrack</span>
-                    </div>
-                </div>
-                <nav class="site-actions">
-                    <a class="soc-icon" href="https://mukashov.com" aria-label="На главную">
-                        <i class="fas fa-arrow-left"></i>
-                    </a>
-                </nav>
-            </div>
-        </header>
+<body id="top">
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="masthead">
+    <a class="brand brand-light" href="#top" aria-label="Startrack — в начало"><img src="assets/startrack/wordmark.svg" alt="Startrack™"></a>
+  </header>
+  <nav class="dock" aria-label="Основное меню">
+    <a class="dock-home" href="#top" aria-label="Startrack — в начало" aria-current="location"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M12 1.5 14.2 9.8 22.5 12l-8.3 2.2L12 22.5l-2.2-8.3L1.5 12l8.3-2.2Z"/></svg></a>
+    <a href="#design">Устройство</a>
+    <a href="#versions">Версии</a>
+    <a href="#faq">Вопросы</a>
+    <a class="dock-test" href="testing.html" aria-label="Запросить тестирование"><span class="wide-label">Запросить тест</span><span class="short-label">Тест</span><span class="arrow ne" aria-hidden="true"></span></a>
+  </nav>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-art">
+        <source media="(max-aspect-ratio: 4/5)" srcset="assets/startrack/pro-night-portrait.webp">
+        <img src="assets/startrack/pro-night-wide.webp" width="1672" height="941" fetchpriority="high" alt="Визуализация Startrack Pro с мягкими боковыми опорами на берегу горного озера в сумерках.">
+      </picture>
+      <div class="hero-wash"></div>
+      <div class="hero-type">
+        <h1 id="hero-title">Ближе к звёздам.</h1>
+        <p>Стойка для наблюдения за ночным небом.</p>
+      </div>
+    </section>
 
-        <main>
-            <section class="projects">
-                <div class="container">
-                    <div class="projects__header">
-                        <div>
-                            <h2>Комплектации трекинговых приспособлений</h2>
-                            <p>Три версии под разные маршруты и требования к устойчивости наблюдения. Выберите формат и закажите подбор.</p>
-                        </div>
-                    </div>
+    <section class="design section wrap" id="design" aria-labelledby="design-title">
+      <div class="section-intro">
+        <p class="section-name"><i aria-hidden="true"></i> Устройство</p>
+        <div>
+          <h2 id="design-title">Площадка под ногами.<br>Мягкая опора за спиной.</h2>
+          <p class="intro-copy">Площадка под обе стопы наклоняется вместе со спинкой и сохраняет с ней угол 90°. У Lite по бокам расположены ручки. У Pro и X на мягкую опору можно положить всю руку от плеча до кисти.</p>
+        </div>
+      </div>
+      <div class="detail-grid">
+        <figure class="photo-card">
+          <img src="assets/startrack/pro-elbow.webp" width="1448" height="1086" loading="lazy" alt="Изгиб мягкой опоры Startrack Pro под локтем и рукоятка перед запястьем.">
+          <figcaption><h3>От плеча до ладони</h3><p>Мягкая опора Startrack Pro огибает локоть и сужается к запястью.</p></figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/startrack/x-control.webp" width="1254" height="1254" loading="lazy" alt="Полноразмерный джойстик Startrack X с полкой под ладонь у края подлокотника.">
+          <figcaption><h3>Управление X</h3><p>Два джойстика под ладонями управляют наклоном и разворотом.</p></figcaption>
+        </figure>
+      </div>
+    </section>
 
-                    <div class="row">
-                        <article class="project-card">
-                            <span class="project-card__tag">Lite</span>
-                            <h3>Лёгкая база</h3>
-                            <p>Минимальный вес, быстрый монтаж и надёжная опора для коротких выездов.</p>
-                            <div class="project-card__footer">
-                                <span class="project-card__meta">Для 1–2 ночей</span>
-                                <a class="button button--small" href="mailto:support@mukashov.com">Заказать</a>
-                            </div>
-                        </article>
+    <section class="variants" id="versions" aria-labelledby="version-title">
+      <div class="wrap version-layout">
+        <div class="version-aside">
+          <p class="section-name"><i aria-hidden="true"></i> Версии</p>
+          <h2 id="version-title">Три версии <br>Startrack.</h2>
+          <p class="intro-copy">Выберите версию, чтобы рассмотреть опору для рук и сравнить способы регулировки.</p>
+          <div class="segment" aria-label="Выбрать версию">
+            <button type="button" data-model="Lite" aria-pressed="false">Lite</button>
+            <button type="button" data-model="Pro" aria-pressed="true">Pro</button>
+            <button type="button" data-model="X" aria-pressed="false">X</button>
+          </div>
+          <div class="version-info" aria-live="polite" aria-atomic="true">
+            <h3 id="version-feature">Регулируемая опора для рук</h3>
+            <p id="version-description">Подушки поддерживают заднюю поверхность плеча, локоть и предплечье до рукоятки. Высоту и ширину можно подстроить с каждой стороны.</p>
+          </div>
+          <a id="version-request" class="text-link" href="testing.html?model=Pro">На тестирование Pro <span class="arrow ne" aria-hidden="true"></span></a>
+        </div>
+        <figure class="model-stage">
+          <img id="model-image" src="assets/startrack/pro-studio.webp" width="840" height="960" loading="lazy" alt="Трёхмерная сборка Startrack Pro в ракурсе три четверти.">
+          <div class="pose-switch" role="group" aria-label="Положение подлокотников X" hidden>
+            <button type="button" data-pose="work" aria-pressed="true">Управление</button><button type="button" data-pose="rest" aria-pressed="false">Отдых</button>
+          </div>
+          <figcaption aria-live="polite"><strong id="model-name">Startrack Pro</strong><span id="model-note">Проём между подушками 460–680 мм</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-                        <article class="project-card">
-                            <span class="project-card__tag">Pro</span>
-                            <h3>Универсальный трек</h3>
-                            <p>Усиленный каркас, комфортная посадка и быстрая регулировка угла наблюдения.</p>
-                            <div class="project-card__footer">
-                                <span class="project-card__meta">Для регулярных выездов</span>
-                                <a class="button button--small" href="mailto:support@mukashov.com">Заказать</a>
-                            </div>
-                        </article>
-
-                        <article class="project-card project-card--light">
-                            <span class="project-card__tag">X</span>
-                            <h3>Экспедиционный максимум</h3>
-                            <p>Максимальная устойчивость, расширенная зона опоры и комплект для долгих наблюдений.</p>
-                            <div class="project-card__footer">
-                                <span class="project-card__meta">Для дальних маршрутов</span>
-                                <a class="button button--small button--dark" href="mailto:support@mukashov.com">Заказать</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer">
-            <div class="container">
-                <p>Startrack. Трекинг, который поддерживает наблюдение.</p>
-            </div>
-        </footer>
-    </div>
+    <section class="section wrap faq" id="faq" aria-labelledby="faq-title">
+      <div class="faq-heading"><p class="section-name"><i aria-hidden="true"></i> FAQ</p><h2 id="faq-title">Вопросы <br>и ответы.</h2></div>
+      <div class="faq-items">
+        <details name="questions" open><summary>Как пользоваться стойкой?<span class="disc" aria-hidden="true"></span></summary><p>Разместите обе стопы на площадке и обопритесь на спинку. В Pro и X мягкие боковые опоры поддерживают руки. При тестировании команда поможет подобрать положение спинки.</p></details>
+        <details name="questions"><summary>Как регулируется наклон?<span class="disc" aria-hidden="true"></span></summary><p>У Lite и Pro угол спинки задают задние распорки с фиксаторами. У X правый джойстик регулирует продольный наклон от 15 до 20°, а левый задаёт боковой наклон и разворот до 90° в каждую сторону.</p></details>
+        <details name="questions"><summary>Можно ли опустить руки в версии X?<span class="disc" aria-hidden="true"></span></summary><p>Да. В рабочей посадке предплечье лежит на подлокотнике, кисть находится у джойстика. Для отдыха нижнюю секцию можно опустить вдоль спинки и распрямить руку. Левая и правая стороны регулируются отдельно.</p></details>
+        <details name="questions"><summary>На какой рост и вес рассчитана стойка?<span class="disc" aria-hidden="true"></span></summary><p>Сейчас это прототип. Допустимую нагрузку, устойчивость и диапазон роста предстоит подтвердить испытаниями. Возможность участия команда уточнит до встречи.</p></details>
+        <details name="questions"><summary>Как попасть на тестирование?<span class="disc" aria-hidden="true"></span></summary><p>Отправьте запрос с именем, городом и интересующей версией. Когда появится подходящий прототип и площадка, команда сможет согласовать с вами условия по почте.</p></details>
+      </div>
+    </section>
+    <section class="invitation" aria-labelledby="invite-title">
+      <div class="wrap invite-inner"><div><p class="section-name"><i aria-hidden="true"></i> Тестирование</p><h2 id="invite-title">Попробовать<br>Startrack.</h2></div><a class="pill invite-cta" href="testing.html">Запросить тестирование <span class="arrow ne" aria-hidden="true"></span></a></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top" aria-label="Startrack — в начало"><img src="assets/startrack/wordmark.svg" alt="Startrack™"></a><a href="mailto:support@mukashov.com">support@mukashov.com</a><a href="#top">Наверх ↑</a></div></footer>
 </body>
 </html>
